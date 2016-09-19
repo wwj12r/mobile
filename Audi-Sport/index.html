@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+	<meta name="format-detection"content="telephone=no, email=no"/>
+	<title>Audi Sport</title>
+	<link rel="stylesheet" href="css/main.css">
+	<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<script src="js/wxShare.js"></script>
+	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?47a61bdb6eeec5b9ff1dad979973eb02";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+</head>
+<body>
+<div id="screen">
+	<div class="audio">
+		<audio id="audio" autoplay="autoplay" loop="loop">
+			<source src="audio.mp3" type="audio/mpeg">
+		</audio>
+	</div>
+	<div class="audio2">
+		<audio id="audio2">
+			<source src="engine.mp3" type="audio/mpeg">
+		</audio>
+	</div>
+	<div id="loading">
+		<div class="p1">
+			<img _src1="img/ld_kv.jpg">
+		</div>
+		<div class="ld_logo">
+			<img _src1="img/ld_logo.png">
+			<div class="ld_circle">
+				<img _src1="img/ld_circle.png">
+			</div>
+			<div class="ld_txt">
+				<span>0</span>
+			</div>
+		</div>
+	</div>
+	<div id="logo">
+		<img _src2="img/logo.png">
+	</div>
+	<div class="dr">
+		<img _src2="img/dr_1.jpg" class="dr_1 dr_pic">
+		<img _src2="img/dr_2.jpg" class="dr_2 dr_pic">
+		<img _src2="img/dr_3.jpg" class="dr_3 dr_pic">
+		<img _src2="img/dr_4.jpg" class="dr_4 dr_pic">
+		<img _src2="img/dr_5.jpg" class="dr_5 dr_pic">
+		<img _src2="img/dr_4.jpg" class="dr_2 dr_pic">
+		<img _src2="img/dr_3.jpg" class="dr_3 dr_pic">
+		<img _src2="img/dr_2.jpg" class="dr_4 dr_pic">
+		<img _src2="img/dr_1.jpg" class="dr_5 dr_pic">
+		<img _src2="img/dr_2.jpg" class="dr_2 dr_pic">
+		<img _src2="img/dr_3.jpg" class="dr_3 dr_pic">
+		<img _src2="img/dr_4.jpg" class="dr_4 dr_pic">
+		<img _src2="img/dr_5.jpg" class="dr_5 dr_pic">
+	</div>
+	<div id="page_box">
+		<div class="page1">
+			<div class="p1">
+				<img _src2="img/000.jpg">
+				<div class="p1_kvlist">
+					<img _src2="img/000.jpg">
+					<img _src2="img/111.jpg">
+					<img _src2="img/222.jpg">
+					<img _src2="img/333.jpg">
+					<img _src2="img/444.jpg">
+					<img _src2="img/555.jpg">
+				</div>
+				<div class="starbox">
+					<div class="star1">
+						<img _src2="img/star.png">
+					</div>
+					<div class="star2">
+						<img _src2="img/star.png">
+					</div>
+					<div class="star3">
+						<img _src2="img/star.png">
+					</div>
+					<div class="star4">
+						<img _src2="img/star.png">
+					</div>
+					<div class="star5">
+						<img _src2="img/star.png">
+					</div>
+				</div>
+				<div class="p1_txt">
+					<img _src2="img/p1_txt.png">
+				</div>
+				<div class="p1_circle">
+					<img _src2="img/p1_blackcir.png">
+					<div class="p1_qurcir" id="target">
+						<img _src2="img/p1_qurcir.png">
+					</div>
+					<div class="p1_circenter">
+						<img _src2="img/p1_circenter.png">
+					</div>
+					<div class="p1_bluecir">
+						<img _src2="img/p1_bluecir.png">
+					</div>
+				</div>
+				<div class="p1_tips">
+					<img _src2="img/p1_tips.png">
+				</div>
+			</div>
+		</div>
+		<div class="page2">
+			<div class="p2_kv">
+				<img _src2="img/p2_kv.jpg">
+				<div class="starbox">
+					<div class="star1">
+						<img _src2="img/star.png">
+					</div>
+					<div class="star2">
+						<img _src2="img/star.png">
+					</div>
+					<div class="star3">
+						<img _src2="img/star.png">
+					</div>
+					<div class="star4">
+						<img _src2="img/star.png">
+					</div>
+					<div class="star5">
+						<img _src2="img/star.png">
+					</div>
+				</div>
+				<div class="p2_car">
+					<img _src2="img/p2_car.png">
+					<div class="p2_wheel1 p2_wheel">
+						<img _src2="img/p2_wheel.png">
+					</div>
+					<div class="p2_wheel2 p2_wheel">
+						<img _src2="img/p2_wheel.png">
+					</div>
+				</div>
+				<div class="p2_door">
+					<img _src2="img/p2_door.jpg">
+				</div>
+				<div class="p2_stone">
+					<img _src2="img/p2_stone.png">
+				</div>
+				<div class="p2_tube">
+					<img _src2="img/p2_tube.png">
+					<div class="p2_line">
+						<img _src2="img/p2_line.png">
+					</div>
+				</div>
+				<div class="p2_txt">
+					<img _src2="img/p2_txt.png">
+				</div>
+			</div>
+		</div>
+		<div class="page3">
+			<div class="p3_kv">
+				<img _src2="img/p3_kv.jpg">
+				<div class="starbox">
+					<div class="star1">
+						<img _src2="img/star.png">
+					</div>
+					<div class="star2">
+						<img _src2="img/star.png">
+					</div>
+					<div class="star3">
+						<img _src2="img/star.png">
+					</div>
+					<div class="star4">
+						<img _src2="img/star.png">
+					</div>
+					<div class="star5">
+						<img _src2="img/star.png">
+					</div>
+				</div>
+				<div class="p3_tips">
+					<img _src2="img/p3_tips.png">
+				</div>
+				<div class="p3_txt">
+					<img _src2="img/p3_txt.png">
+				</div>
+				<div class="p3_line">
+					<img _src2="img/p3_line.png">
+				</div>
+				<div class="p3_point p3_point1">
+					<img _src2="img/p3_point.png">
+					<div>
+						<span>外观</span>
+					</div>
+				</div>
+				<div class="p3_point p3_point2">
+					<img _src2="img/p3_point.png">
+					<div>
+						<span>内饰</span>
+					</div>
+				</div>
+				<div class="p3_point p3_point3">
+					<img _src2="img/p3_point.png">
+					<div>
+						<span>安全</span>
+					</div>
+				</div>
+				<div class="p3_point p3_point4">
+					<img _src2="img/p3_point.png">
+					<div>
+						<span>动力</span>
+					</div>
+				</div>
+				<div class="p3_point p3_point5">
+					<img _src2="img/p3_point.png">
+					<div>
+						<span>精美大图</span>
+					</div>
+				</div>
+				<div class="p3_bridge p3_bridge1">
+					<img _src2="img/p3_bridge.png">
+				</div>
+				<div class="p3_bridge p3_bridge2">
+					<img _src2="img/p3_bridge.png">
+				</div>
+				<div class="p3_bridge p3_bridge3">
+					<img _src2="img/p3_bridge.png">
+				</div>
+				<div class="p3_bridge p3_bridge4">
+					<img _src2="img/p3_bridge.png">
+				</div>
+				<div class="p3_btnbox">
+					<div class="p3_btn1 p3_btn"></div>
+					<div class="p3_btn2 p3_btn"></div>
+					<div class="p3_btn3 p3_btn"></div>
+					<div class="p3_btn4 p3_btn"></div>
+					<div class="p3_btn5 p3_btn"></div>
+				</div>
+			</div>
+			<div class="p3_window">
+				<div class="p3_kuang">
+					<img _src2="img/p3_window.png">
+					<div class="p3_pic">
+						<img _src2="img/p3_pic1.png">
+					</div>
+					<div class="p3_pic">
+						<img _src2="img/p3_pic2.png">
+					</div>
+					<div class="p3_pic">
+						<img _src2="img/p3_pic3.png">
+					</div>
+					<div class="p3_pic">
+						<img _src2="img/p3_pic4.png">
+					</div>
+					<div class="p3_pic">
+						<img _src2="img/p3_pic5.png">
+					</div>
+					<div class="p3_close"></div>
+				</div>
+			</div>
+			<div class="arrowup">
+				<img _src2="img/arrowup.png">
+			</div>
+		</div>
+		<div class="page4">
+			<div class="p4_kv">
+				<img _src2="img/p4_kv.jpg">
+				<div class="p4_moon">
+					<img _src2="img/p4_moon.png">
+				</div>
+				<div class="starbox">
+					<div class="star1">
+						<img _src2="img/star.png">
+					</div>
+					<div class="star2">
+						<img _src2="img/star.png">
+					</div>
+					<div class="star3">
+						<img _src2="img/star.png">
+					</div>
+					<div class="star4">
+						<img _src2="img/star.png">
+					</div>
+					<div class="star5">
+						<img _src2="img/star.png">
+					</div>
+				</div>
+				<div class="p4_wall">
+					<img _src2="img/p4_wall.png">
+				</div>
+				<div class="p4_car">
+					<img _src2="img/p4_car.png">
+				</div>
+			</div>
+			<div class="p4_hand">
+				<img _src2="img/p4_hand.png">
+			</div>
+			<div class="p4_txt">
+				<img _src2="img/p4_txt.png">
+			</div>
+		</div>
+		<div class="page5">
+			<div class="p5">
+				<img _src2="img/p5_kv1.jpg">
+				<div class="arrowup">
+					<img _src2="img/arrowup.png">
+				</div>
+			</div>
+		</div>
+		<div class="page51 page5_s">
+			<div class="p5">
+				<img _src2="img/p5_kv2.jpg">
+				<div class="arrowup">
+					<img _src2="img/arrowup.png">
+				</div>
+			</div>
+		</div>
+		<div class="page52 page5_s">
+			<div class="p5">
+				<img _src2="img/p5_kv3.jpg">
+				<div class="arrowup">
+					<img _src2="img/arrowup.png">
+				</div>
+			</div>
+		</div>
+		<div class="page53 page5_s">
+			<div class="p5">
+				<img _src2="img/p5_kv4.jpg">
+				<div class="arrowup">
+					<img _src2="img/arrowup.png">
+				</div>
+			</div>
+		</div>
+		<div class="page54 page5_s">
+			<div class="p5">
+				<img _src2="img/p5_kv5.jpg">
+				<div class="arrowup">
+					<img _src2="img/arrowup.png">
+				</div>
+			</div>
+		</div>
+		<div class="page55 page5_s">
+			<div class="p5">
+				<img _src2="img/p5_kv6.jpg">
+				<div class="arrowup">
+					<img _src2="img/arrowup.png">
+				</div>
+			</div>
+		</div>
+		<div class="page6">
+			<div class="p6_kv">
+				<img _src2="img/p6_kv.jpg">
+				<div class="p6_letter">
+					<div class="p6_lettertop">
+						<img _src2="img/p6_lettertop.png">
+					</div>
+					<div class="p6_letterbottom">
+						<img _src2="img/p6_letterbottom.png">
+					</div>
+					<div class="p6_jian">
+						<img _src2="img/p6_jian.png">
+					</div>
+					<div class="p6_lastbottom">
+						<img _src2="img/p6_lastbottom.png">
+					</div>
+					<div class="p6_openletter" id="p6_openletter">
+						<img _src2="img/p6_letter.png">
+						<div class="form">
+							<img _src2="img/p6_name.png" class="p6_name">
+							<img _src2="img/p6_mobile.png" class="p6_mobile">
+							<div>
+								<input type="text" class="name" name="name">
+								<span class="nametxt">姓名</span>
+							</div>
+							<div class="box">
+								<div class="male xing bie">
+									<span>先生</span>
+								</div>
+								<div style="margin-left:5%" class="female xing">
+									<span>女士</span>
+								</div>
+								<input type="hidden" class="sex" name="sex" value="先生">
+							</div>
+							<div>
+								<input type="tel" class="mobile" name="mobile" maxlength="11" pattern="[0-9]*">
+								<span class="mobiletxt">手机</span>
+							</div>
+							<div class="box">
+								<select class="province" name="province"></select>
+								<select class="city" style="margin-left:5%" name="city"></select>
+							</div>
+							<div class="submit"></div>
+							<div class="back"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="js/zepto.js"></script>
+<script>
+	var height=window.innerWidth*0.7/441*243;
+	$('.iSlider-effect').height(height)
+</script>
+<script src="js/zepto.wwj.js"></script>
+<script src="js/touchjs.js"></script>
+<script src="js/islider.js"></script>
+<script type="text/javascript" src="http://server.mconnect.cn:3000/static/api.js"></script>
+<script src="js/proty.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

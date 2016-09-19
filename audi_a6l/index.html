@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+	<meta name="format-detection"content="telephone=no, email=no"/>
+	<title>奥迪专属换享季</title>
+	<link rel="stylesheet" type="text/css" href="css/swiper.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<script src="js/wxShare.js"></script>
+	<script>
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "//hm.baidu.com/hm.js?a86aec55ed88c18a19244a00b2977194";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+	</script>
+</head>
+<body>
+<div id="screen">
+<div style="display:none;"><script type="text/javascript">if(window.location.href.substring(window.location.href.indexOf('?smartcode=')+11)==="jrtt"){var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1259652480'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1259652480' type='text/javascript'%3E%3C/script%3E"));}</script></div>
+	<audio src="audio.mp3" id="audio"></audio>
+	<div class="shijia">
+		<div class="zhuce">
+			<img _src2="img/zhuce.png">
+		</div>
+		<div class="form">
+			<div>
+				<input type="text" name="name" style="padding-left:18%" class="name" placeholder="姓名">
+				<img _src2="img/man.png" class="man">
+			</div>
+			<div class="box">
+				<div class="sex">先生</div>
+				<div class="sex" style="margin-left:4%">女士</div>
+				<input type="hidden" class="xingbie" name="sex">
+			</div>
+			<div>
+				<input type="tel" name="mobile" style="padding-left:18%" maxlength="11" placeholder="手机号">
+				<img _src2="img/mobile.png" class="mobile">
+			</div>
+			<div class="box">
+				<select class="province" name="province"></select>
+				<select class="city" name="city" style="margin-left:4%"></select>
+			</div>
+			<div class="dealer">
+				<select class="dealers" name="dealers"></select>
+			</div>
+			<div class="shijia_check on">
+				<img _src2="img/shijia_check.png">
+				<img _src2="img/check.png" class="check">
+				<input type="hidden" class="checked" name="checked" value="1">
+			</div>
+			<div class="alerttxt"></div>
+			<div>
+				<img _src2="img/submit.png">
+				<div class="submit"></div>
+				<div class="back"></div>
+			</div>
+		</div>
+	</div>
+	<div class="menu1">
+		<div class="p3_back">
+			<img _src2="img/p2_back.png">
+		</div>
+		<div class="p3_menu11 menu">
+			<img _src2="img/p3_menu11.jpg">
+			<img _src2="img/p3_menukuang.png" class="p3_menukuang">
+		</div>
+		<div class="p3_menu12 menu">
+			<img _src2="img/p3_menu12.jpg">
+			<img _src2="img/p3_menukuang.png" class="p3_menukuang">
+		</div>
+		<div class="p3_menu21 menu">
+			<img _src2="img/p3_menu21.jpg">
+			<img _src2="img/p3_menukuang.png" class="p3_menukuang">
+		</div>
+		<div class="p3_menu22 menu">
+			<img _src2="img/p3_menu22.jpg">
+			<img _src2="img/p3_menukuang.png" class="p3_menukuang">
+		</div>
+	</div>
+	<div id="page_box">
+		<div class="page1">
+			<div class="logo">
+				<img _src="img/logo.png">
+			</div>
+			<div class="p1_kv">
+				<img _src="img/p1_kv.jpg">
+			</div>
+			<div class="p1_txt">
+				<div data-name="jia">
+					<img _src="img/p1_txt1.png">
+				</div>
+				<div data-name="lv">
+					<img _src="img/p1_txt2.png">
+				</div>
+				<div data-name="shang" style="border-right:none">
+					<img _src="img/p1_txt3.png">
+				</div>
+				<img _src2="img/p3_hand.png" class="p1_hand">
+			</div>
+			<div class="p1_title">
+				<div class="on">
+					<img _src="img/p1_title1.png">
+					<div class="p1_shijia shijiabtn">
+						<img src="img/p2_shijia.png">
+					</div>
+				</div>
+				<div>
+					<img _src2="img/p1_title2.png">
+				</div>
+				<div>
+					<img _src2="img/p1_title3.png">
+				</div>
+				<div>
+					<img _src2="img/p1_title4.png">
+				</div>
+			</div>
+			<div class="arrow">
+				<img _src2="img/arrow.png">
+				<div class="arrowup">
+					<img _src2="img/arrowup.png">
+				</div>
+			</div>
+		</div>
+		<div class="page2">
+			<div class="p2_1">
+				<div class="logo">
+					<img _src2="img/logo.png">
+				</div>
+				<div class="swiper-container p2_kv">
+			  		<div class="swiper-wrapper">
+					    <div class="swiper-slide">
+					    	<img _src2="img/p2_pic1.jpg">
+					    	<div class="p2_txt">
+					    		<img _src2="img/p2_txt1.png">
+					    	</div>
+					    	<div class="p2_pic1">
+						    	<p class="p2_btn1 on">个性</p>
+						    	<p class="p2_btn2">自动</p>
+						    	<p class="p2_btn3">舒适</p>
+						    	<p class="p2_btn4">运动</p>
+						    	<p class="p2_btn5">高效</p>
+					    	</div>
+					    </div>
+					    <div class="swiper-slide">
+					    	<img _src2="img/p2_pic2.jpg">
+					    	<div class="p2_txt">
+					    		<img _src2="img/p2_txt2.png">
+					    	</div>
+					    	<div class="p2_pic2">
+						    	<p class="p2_btn1">个性</p>
+						    	<p class="p2_btn2 on">自动</p>
+						    	<p class="p2_btn3">舒适</p>
+						    	<p class="p2_btn4">运动</p>
+						    	<p class="p2_btn5">高效</p>
+					    	</div>
+					    </div>
+					    <div class="swiper-slide">
+					    	<img _src2="img/p2_pic3.jpg">
+					    	<div class="p2_txt">
+					    		<img _src2="img/p2_txt3.png">
+					    	</div>
+					    	<div class="p2_pic3">
+						    	<p class="p2_btn1">个性</p>
+						    	<p class="p2_btn2">自动</p>
+						    	<p class="p2_btn3 on">舒适</p>
+						    	<p class="p2_btn4">运动</p>
+						    	<p class="p2_btn5">高效</p>
+					    	</div>
+					    </div>
+					    <div class="swiper-slide">
+					    	<img _src2="img/p2_pic4.jpg">
+					    	<div class="p2_txt">
+					    		<img _src2="img/p2_txt4.png">
+					    	</div>
+					    	<div class="p2_pic4">
+						    	<p class="p2_btn1">个性</p>
+						    	<p class="p2_btn2">自动</p>
+						    	<p class="p2_btn3">舒适</p>
+						    	<p class="p2_btn4 on">运动</p>
+						    	<p class="p2_btn5">高效</p>
+					    	</div>
+					    </div>
+					    <div class="swiper-slide">
+					    	<img _src2="img/p2_pic5.jpg">
+					    	<div class="p2_txt">
+					    		<img _src2="img/p2_txt5.png">
+					    	</div>
+					    	<div class="p2_pic5">
+						    	<p class="p2_btn1">个性</p>
+						    	<p class="p2_btn2">自动</p>
+						    	<p class="p2_btn3">舒适</p>
+						    	<p class="p2_btn4">运动</p>
+						    	<p class="p2_btn5 on">高效</p>
+					    	</div>
+					    </div>
+				  	</div>
+			  	</div>
+			  	<div class="p2_back">
+			  		<img _src2="img/p3_back.png">
+			  	</div>
+			  	<div class="shijiabtn p2_shijia">
+			  		<img _src2="img/p2_shijia.png">
+			  	</div>
+		  	</div>
+		  	<div class="p2_4">
+				<div class="logo" style="z-index:1;opacity:0">
+					<img _src2="img/logo.png">
+				</div>
+				<div class="p3_txt">
+					<img _src2="img/p3_txt.png">
+				</div>
+				<div class="p3_shijia shijiabtn">
+					<img _src2="img/p2_shijia.png">
+				</div>
+				<div class="p3_back2">
+					<img _src2="img/p3_back.png">
+				</div>
+				<div class="p3_kv">
+		  			<img _src2="img/p3_kv.jpg">
+					<div class="p3_car">
+						<img _src2="img/p3_car.png">
+						<div class="p3_deng">
+							<img _src2="img/p3_deng.png">
+						</div>
+					</div>
+					<div class="p3_block"></div>
+					<div class="p3_lightbg">
+						<img _src2="img/p3_lightoff.jpg">
+						<div class="p3_hand">
+							<img _src2="img/p3_hand.png">
+						</div>
+						<div class="p3_halo">
+							<img _src2="img/p3_halo.png">
+						</div>
+						<div class="p3_light">
+							<img _src2="img/p3_light.png">
+						</div>
+						<div class="p3_tips">
+							<img _src2="img/p3_tips.png">
+						</div>
+					</div>
+		  		</div>
+		  	</div>
+		  	<div class="p2_3">
+		  		<div class="logo2">
+		  			<img _src2="img/logo.png">
+		  		</div>
+		  		<div class="p2_bg"></div>
+		  		<div class="p2_bg2"></div>
+		  		<div class="p2_earth">
+		  			<img _src2="img/p2_earth.jpg">
+		  		</div>
+		  		<div class="p2_2txt">
+				  	<div class="p2_2txt1">
+				  		<img _src2="img/p2_2txt1.png">
+				  	</div>
+				  	<div class="p2_2txt2">
+				  		<img _src2="img/p2_2txt2.png">
+				  	</div>
+				  	<div class="p2_2txt3">
+				  		<img _src2="img/p2_2txt3.png">
+				  	</div>
+			  	</div>
+			  	<div class="arrowdown">
+			  		<img _src2="img/arrowdown.png">
+			  		<div class="arrowarrow">
+			  			<img _src2="img/arrowarrow.png">
+			  		</div>
+			  	</div>
+			  	<div class="p2_block"></div>
+			  	<div class="p2_road">
+			  		<img _src2="img/p2_road.jpg">
+			  		<div class="p2_round">
+			  			<img _src2="img/p2_round.png">
+			  		</div>
+			  		<div class="p2_car">
+			  			<img _src2="img/p2_car.png">
+			  		</div>
+			  		<div class="p2_line">
+			  			<img _src2="img/p2_line.png">
+			  		</div>
+			  		<div class="p2_2btn">
+			  			<div class="p2_2btn1">
+			  				<img _src2="img/p2_btn1.png">
+			  				<img _src2="img/p2_red1.png">
+			  			</div>
+			  			<div class="p2_2btn2">
+			  				<img _src2="img/p2_btn2.png">
+			  				<img _src2="img/p2_red2.png">
+			  			</div>
+			  			<div class="p2_2btn3">
+			  				<img _src2="img/p2_btn3.png">
+			  				<img _src2="img/p2_red3.png">
+			  			</div>
+			  			<div class="p2_2btn4">
+			  				<img _src2="img/p2_btn4.png">
+			  				<img _src2="img/p2_red4.png">
+			  			</div>
+			  			<div class="p2_2btn5">
+			  				<img _src2="img/p2_btn5.png">
+			  				<img _src2="img/p2_red5.png">
+			  			</div>
+			  			<div class="p2_2btn6">
+			  				<img _src2="img/p2_btn6.png">
+			  				<img _src2="img/p2_red6.png">
+			  			</div>
+			  			<div class="p2_2btn7">
+			  				<img _src2="img/p2_btn7.png">
+			  				<img _src2="img/p2_red7.png">
+			  			</div>
+			  			<div class="p2_2btn8">
+			  				<img _src2="img/p2_btn8.png">
+			  				<img _src2="img/p2_red8.png">
+			  			</div>
+			  			<div class="p2_2btn9">
+			  				<img _src2="img/p2_btn9.png">
+			  				<img _src2="img/p2_red9.png">
+			  			</div>
+			  		</div>
+			  		<div class="p2_img">
+			  			<img _src2="img/p2_img1.png">
+			  			<img _src2="img/p2_img2.png">
+			  			<img _src2="img/p2_img3.png">
+			  			<img _src2="img/p2_img4.png">
+			  			<img _src2="img/p2_img5.png">
+			  			<img _src2="img/p2_img6.png">
+			  			<img _src2="img/p2_img7.png">
+			  			<img _src2="img/p2_img8.png">
+			  			<img _src2="img/p2_img9.png">
+			  			<div class="p2_close">
+			  				<img _src2="img/p2_close.png">
+			  			</div>
+			  		</div>
+			  	</div>
+			  	<div class="p2_back3" style="bottom:3%">
+			  		<img _src2="img/p3_back.png">
+			  	</div>
+			  	<div class="shijiabtn p2_shijia" style="bottom:3%">
+			  		<img _src2="img/p2_shijia.png">
+			  	</div>
+		  	</div>
+		  	<div class="p2_5">
+				<div class="logo">
+					<img _src2="img/logo.png">
+				</div>
+				<div class="p3_shijia shijiabtn" style="opacity:1">
+					<img _src2="img/p2_shijia.png">
+				</div>
+				<div class="p3_back3">
+					<img _src2="img/p3_back.png">
+				</div>
+				<div class="p3_color">
+					<img _src2="img/p3_color.png">
+					<div class="on"></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+		  		<div class="p1_kv">
+		  			<img _src2="img/p3_kv.jpg">
+					<div class="p3_carcolor">
+						<img _src2="img/p3_car1.png" style="opacity:1">
+						<img _src2="img/p3_car2.png">
+						<img _src2="img/p3_car3.png">
+						<img _src2="img/p3_car.png">
+						<img _src2="img/p3_car5.png">
+						<img _src2="img/p3_car6.png">
+					</div>
+		  		</div>
+		  	</div>
+		  	<div class="p2_2">
+				<div class="logo">
+					<img _src2="img/logo2.png">
+				</div>
+	  			<input type="text" class="address">
+	  			<div class="addressbtn">
+	  				点击生成
+	  			</div>
+		        <div id="l-map" class="map oh pa"></div>
+			  	<div class="p2_back2">
+			  		<img _src2="img/p3_back.png">
+			  	</div>
+			  	<div class="shijiabtn p2_shijia">
+			  		<img _src2="img/p2_shijia.png">
+			  	</div>
+		  	</div>
+		</div>
+	</div>
+</div>
+<script src="js/zepto.js"></script>
+<script src="js/zepto.wwj.js"></script>
+<script src="js/swiper.js"></script>
+<script src="js/dealer.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=8E8A213656a3161234db94007b678643"></script>
+<script type="text/javascript" src="http://server.mconnect.cn:3000/static/api.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
