@@ -1,0 +1,59 @@
+html{font-size: 110%;-webkit-tap-highlight-color: transparent; }
+html,body{height: 100%;}
+@media screen and (max-device-width:414px) 
+{
+    html{font-size: 120%;}
+    
+}
+@media screen and (max-device-width:375px) 
+{
+    html{font-size: 110%;}
+    
+}
+@media screen and (max-device-width:320px) 
+{
+    html{font-size: 90.5%;}
+    
+}
+@-webkit-keyframes flash{
+  0% ,100%   {-webkit-transform:scale(1);}
+  50%  {-webkit-transform:scale(0.7);}
+}
+@-webkit-keyframes click{
+  0%   {opacity:1;-webkit-transform:scale(1);}
+  25%  {opacity:1;-webkit-transform:scale(0.7);}
+  50%  {opacity:1;-webkit-transform:scale(1);}
+  75%  {opacity:1;-webkit-transform:scale(0.7);}
+  100% {opacity:0;-webkit-transform:scale(1);}
+}
+img{display: block;width: 100%;}
+.page4,.p4_pickv{position: fixed;top: 0;left: 0;width: 100%;z-index: 1;display: none;}
+
+  .hd{position: absolute;width: 100%;text-align: center;padding: 0;margin-bottom: 0.4rem;bottom: 0;}
+  .hd .on{background: #fff;}
+  .hd li{display: inline-block;width: 0.6rem;height: 0.6rem;border: 1px solid #fff;
+    border-radius: 50%;background: transparent;-webkit-transition: all .6s ease;}
+   .close{position: absolute;top: 7%;right: 5%;width: 10%;}
+
+.logo{position: absolute;top: 0;left: 0;width: 100%;}
+.back{position: absolute;top: 10%;right: 5%;width: 15%;}
+.slider{position: absolute;top: 13%;left: 0;width: 100%;}
+.form{position: absolute;top: 19.6%;left: 13%;width: 74%;height: 46.4%}
+	.form p{position: absolute;top: 0;left: 0;margin: auto;text-align: center;
+		color: #fff;font-size: 1rem;height: 2rem;line-height: 2rem;top: 0;right: 0;bottom: 0;left: 0;
+}
+	.form>div{position: relative;height: 12.8%;margin-bottom: 4.3%}
+	.form>div>div{position: absolute;top: 0;left: 0;width: 30%;height: 100%;}
+	input,select{background-color: transparent;height: 100%;
+    -webkit-appearance: none;font-size: 1rem;color: #fff;
+  	box-sizing: border-box;width: 100%;border: none;line-height: 100%;
+  	padding-left: 35%;border-radius: 0;}
+  	.submit{position: absolute;bottom: 0;left: 0;width: 100%;height: 20%;}
+
+.p4_point{position: absolute;top: 67%;left: 41%;width: 15%;-webkit-transform-origin:50% 50%;
+	-webkit-animation:flash 1s 0s linear infinite;}
+
+.p2_hand{position: absolute;top: 70%;left: 41.5%;width: 20%;-webkit-transform-origin:25% 5%;opacity: 0;}
+.show .p2_hand{-webkit-animation:click 1.5s 0.5s linear forwards;}
+
+.p4_car{position: absolute;top: 67%;left: 0;width: 100%;height: 30%;z-index: 123}
