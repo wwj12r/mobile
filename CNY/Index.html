@@ -1,0 +1,334 @@
+﻿
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title>Celebrating Chinese New Year 2015 - an WebGL real-time fireworks experience presented by ACTIVATION GROUP</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=640, maximum-scale=1.0, user-scalable=no">
+		<meta name="keywords" content="Celebrating Chinese New Year 2015" />
+		<meta name="description" content="Celebrating Chinese New Year 2015 - an WebGL real-time fireworks experience presented by ACTIVATION GROUP" />
+		<meta name="format-detection" content="telephone=no"/>
+		<meta name="google" value="notranslate">
+		<meta name="author" content="Du Haihang"/>
+		<meta name="robots" content="index">
+
+		<meta property="og:title" content="Celebrating Chinese New Year 2015"/>
+		<meta property="og:type" content="website"/>
+		<meta property="og:image" content="http://www.nodeplus.cn/archive/cny2015/ico/sharing.jpg"/>
+		<meta property="og:url" content="http://www.nodeplus.cn/archive/cny2015"/>
+		<meta property="og:description" content="Celebrating Chinese New Year 2015 - an WebGL real-time fireworks experience presented by ACTIVATION GROUP"/>
+
+		<meta name="apple-mobile-web-app-capable" content="yes" /> 
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" /> 
+		<meta name="apple-touch-fullscreen" content="yes">
+
+		<link rel="apple-touch-icon-precomposed" size="175x175" href="ico/apple-icon.png" />
+		<link rel="shortcut icon" href="ico/favicon.ico" type="image/x-icon" />
+		<link rel="icon" href="ico/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="css/site.css">
+
+		<script src="lib/vendor.min.js"></script>
+		<script src="lib/app.min.js"></script>
+
+	</head>
+
+	<body>
+		
+		<!-- audio -->
+		<audio id="audio-ash" preload="true"> <source src="assets/ash.mp3" type="audio/mp3" /> </audio>
+		<audio id="audio-boom" preload="true"> <source src="assets/boom.mp3" type="audio/mp3" /> </audio>
+		<audio id="audio-crack" preload="true"> <source src="assets/crack.mp3" type="audio/mp3" /> </audio>
+		<audio id="audio-flush" preload="true"> <source src="assets/flush.mp3" type="audio/mp3" /> </audio>
+		<audio id="audio-pre" preload="true" loop="loop"> <source src="audio.mp3" type="audio/mp3" /> </audio>
+		<div class="wwj_loading">
+			<img src="img/logo.png" class="logo">
+			<span class="loading_num"></span>
+		</div>
+		<div class="wwj_first">
+			<img src="img/pic1.jpg">
+			<img src="img/pic2.jpg">
+			<img src="img/pic3.jpg">
+			<img src="img/pic4.jpg">
+			<img src="img/pic5.jpg">
+			<img src="img/pic6.jpg">
+			<img src="img/pic7.jpg">
+			<img src="img/pic8.jpg">
+			<img src="img/pic9.jpg">
+			<img src="img/pic10.jpg">
+			<img src="img/pic11.jpg">
+			<img src="img/pic12.jpg">
+			<img src="img/pic13.jpg">
+			<img src="img/pic14.jpg">
+			<img src="img/pic15.jpg">
+			<img src="img/pic16.jpg">
+			<img src="img/pic17.jpg">
+			<img src="img/pic18.jpg">
+			<img src="img/pic19.jpg">
+			<img src="img/pic20.jpg">
+			<img src="img/pic21.jpg">
+			<img src="img/pic22.jpg">
+			<img src="img/pic23.jpg">
+			<img src="img/pic24.jpg">
+			<img src="img/pic25.jpg">
+			<img src="img/pic26.jpg">
+			<img src="img/pic27.jpg">
+			<img src="img/pic28.jpg">
+			<img src="img/pic29.jpg">
+			<img src="img/pic30.jpg">
+			<img src="img/pic31.jpg">
+			<img src="img/pic32.jpg">
+			<img src="img/pic33.jpg">
+			<img src="img/pic34.jpg">
+			<img src="img/pic35.jpg">
+			<img src="img/pic36.jpg">
+			<img src="img/pic37.jpg">
+			<img src="img/pic38.jpg">
+			<img src="img/pic39.jpg">
+			<img src="img/pic40.jpg">
+			<img src="img/pic41.jpg">
+			<img src="img/pic42.jpg">
+			<img src="img/pic43.jpg">
+			<img src="img/pic44.jpg">
+			<img src="img/pic45.jpg">
+			<img src="img/pic46.jpg">
+			<img src="img/pic47.jpg">
+			<img src="img/pic48.jpg">
+			<img src="img/pic49.jpg">
+			<img src="img/pic50.jpg">
+			<img src="img/pic51.jpg">
+			<img src="img/pic52.jpg">
+			<img src="img/pic53.jpg">
+			<img src="img/pic54.jpg">
+			<img src="img/pic55.jpg">
+			<img src="img/pic56.jpg">
+			<img src="img/pic57.jpg">
+			<img src="img/pic58.jpg">
+			<img src="img/pic59.jpg">
+			<img src="img/pic60.jpg">
+			<img src="img/pic61.jpg">
+			<img src="img/pic62.jpg">
+			<img src="img/pic63.jpg">
+			<img src="img/pic64.jpg">
+			<img src="img/pic65.jpg">
+			<img src="img/pic66.jpg">
+			<img src="img/pic67.jpg">
+			<img src="img/pic68.jpg">
+			<img src="img/pic69.jpg">
+			<img src="img/pic70.jpg">
+			<img src="img/pic71.jpg">
+			<img src="img/pic72.jpg">
+			<img src="img/pic73.jpg">
+			<img src="img/pic74.jpg">
+			<img src="img/pic75.jpg">
+			<img src="img/pic76.jpg">
+			<img src="img/pic77.jpg">
+			<img src="img/pic78.jpg">
+			<img src="img/pic79.jpg">
+			<img src="img/pic80.jpg">
+			<img src="img/pic81.jpg">
+			<img src="img/pic82.jpg">
+			<img src="img/pic83.jpg">
+			<img src="img/pic84.jpg">
+			<img src="img/pic85.jpg">
+			<img src="img/pic86.jpg">
+			<img src="img/pic87.jpg">
+			<img src="img/pic88.jpg">
+			<img src="img/pic89.jpg">
+			<img src="img/pic90.jpg">
+			<img src="img/pic91.jpg">
+			<img src="img/pic92.jpg">
+			<img src="img/pic93.jpg">
+			<img src="img/pic94.jpg">
+			<img src="img/pic95.jpg">
+			<img src="img/pic96.jpg">
+			<img src="img/pic97.jpg">
+			<img src="img/pic98.jpg">
+			<img src="img/pic99.jpg">
+			<img src="img/pic100.jpg">
+			<img src="img/pic101.jpg">
+			<img src="img/pic102.jpg">
+			<img src="img/pic103.jpg">
+			<img src="img/pic104.jpg">
+			<img src="img/pic105.jpg">
+			<img src="img/pic106.jpg">
+			<img src="img/pic107.jpg">
+			<img src="img/pic108.jpg">
+			<img src="img/pic109.jpg">
+			<img src="img/pic110.jpg">
+			<img src="img/pic111.jpg">
+			<img src="img/pic112.jpg">
+			<img src="img/pic113.jpg">
+			<img src="img/pic114.jpg">
+			<img src="img/pic115.jpg">
+			<img src="img/pic116.jpg">
+			<img src="img/pic117.jpg">
+			<img src="img/pic118.jpg">
+			<img src="img/pic119.jpg">
+			<img src="img/pic120.jpg">
+			<img src="img/pic121.jpg">
+			<img src="img/pic122.jpg">
+			<img src="img/pic123.jpg">
+			<img src="img/pic124.jpg">
+			<img src="img/pic125.jpg">
+			<img src="img/pic126.jpg">
+			<img src="img/pic127.jpg">
+			<img src="img/pic128.jpg">
+			<img src="img/pic129.jpg">
+			<img src="img/pic130.jpg">
+			<img src="img/pic131.jpg">
+			<img src="img/pic132.jpg">
+			<img src="img/pic133.jpg">
+			<img src="img/pic134.jpg">
+			<img src="img/pic135.jpg">
+			<img src="img/pic136.jpg">
+			<img src="img/pic137.jpg">
+			<img src="img/pic138.jpg">
+			<img src="img/pic139.jpg">
+			<img src="img/pic140.jpg">
+			<img src="img/pic141.jpg">
+			<img src="img/pic142.jpg">
+			<img src="img/pic143.jpg">
+			<img src="img/pic144.jpg">
+			<img src="img/pic145.jpg">
+			<img src="img/pic146.jpg">
+			<img src="img/pic147.jpg">
+			<img src="img/pic148.jpg">
+			<img src="img/pic149.jpg">
+			<img src="img/pic150.jpg">
+			<img src="img/pic151.jpg">
+			<img src="img/pic152.jpg">
+			<img src="img/pic153.jpg">
+			<img src="img/pic154.jpg">
+			<img src="img/pic155.jpg">
+			<img src="img/pic156.jpg">
+			<img src="img/pic157.jpg">
+			<img src="img/pic158.jpg">
+			<img src="img/pic159.jpg">
+			<img src="img/pic160.jpg">
+			<img src="img/pic161.jpg">
+			<img src="img/pic162.jpg">
+			<img src="img/pic163.jpg">
+			<img src="img/pic164.jpg">
+			<img src="img/pic165.jpg">
+			<img src="img/pic166.jpg">
+			<img src="img/pic167.jpg">
+			<img src="img/pic168.jpg">
+			<img src="img/pic169.jpg">
+			<img src="img/pic170.jpg">
+			<img src="img/pic171.jpg">
+			<img src="img/pic172.jpg">
+			<img src="img/pic173.jpg">
+			<img src="img/pic174.jpg">
+			<img src="img/pic175.jpg">
+			<img src="img/pic176.jpg">
+			<img src="img/pic177.jpg">
+			<img src="img/pic178.jpg">
+			<img src="img/pic179.jpg">
+			<img src="img/pic180.jpg">
+			<img src="img/pic181.jpg">
+			<img src="img/pic182.jpg">
+			<img src="img/pic183.jpg">
+			<img src="img/pic184.jpg">
+			<img src="img/pic185.jpg">
+			<img src="img/pic186.jpg">
+			<img src="img/pic187.jpg">
+			<img src="img/pic188.jpg">
+			<img src="img/pic189.jpg">
+			<img src="img/pic190.jpg">
+			<img src="img/pic191.jpg">
+			<img src="img/pic192.jpg">
+			<img src="img/pic193.jpg">
+			<img src="img/pic194.jpg">
+			<img src="img/pic195.jpg">
+			<img src="img/pic196.jpg">
+			<img src="img/pic197.jpg">
+			<img src="img/pic198.jpg">
+			<img src="img/pic199.jpg">
+			<img src="img/pic200.jpg">
+			<img src="img/pic201.jpg">
+			<img src="img/pic202.jpg">
+			<img src="img/pic203.jpg">
+			<img src="img/pic204.jpg">
+			<img src="img/pic205.jpg">
+			<img src="img/pic206.jpg">
+			<img src="img/pic207.jpg">
+			<img src="img/pic208.jpg">
+			<img src="img/pic209.jpg">
+			<img src="img/pic210.jpg">
+			<img src="img/pic211.jpg">
+			<img src="img/pic212.jpg">
+			<img src="img/pic213.jpg">
+			<img src="img/pic214.jpg">
+			<img src="img/pic215.jpg">
+			<img src="img/pic216.jpg">
+			<img src="img/pic217.jpg">
+			<img src="img/pic218.jpg">
+			<img src="img/pic219.jpg">
+			<img src="img/pic220.jpg">
+			<img src="img/pic221.jpg">
+			<img src="img/pic222.jpg">
+			<img src="img/pic223.jpg">
+			<img src="img/pic224.jpg">
+			<img src="img/pic225.jpg">
+			<img src="img/pic226.jpg">
+			<img src="img/pic227.jpg">
+			<img src="img/pic228.jpg">
+			<img src="img/pic229.jpg">
+			<img src="img/pic230.jpg">
+			<img src="img/pic231.jpg">
+			<img src="img/pic232.jpg">
+			<img src="img/pic233.jpg">
+			<img src="img/pic234.jpg">
+		</div>
+		<div class="p1_car">
+			<img src="img/p1_car.png">
+		</div>
+		<div class="wwj_bg" id="wwjbg">
+			<img src="img/wwj_bg.jpg" class="wwjbg">
+			<div class="star1">
+				<img src="img/star.png">
+			</div>
+			<div class="star2">
+				<img src="img/star.png">
+			</div>
+			<div class="star3">
+				<img src="img/star.png">
+			</div>
+			<div class="star4">
+				<img src="img/star.png">
+			</div>
+			<div class="star5">
+				<img src="img/star.png">
+			</div>
+			<div class="star6">
+				<img src="img/star.png">
+			</div>
+			<div class="wwj_1">
+				<img src="img/wwj_1.png">
+			</div>
+			<div class="wwj_2">
+				<img src="img/wwj_2.png">
+			</div>
+			<div class="wwj_3">
+				<img src="img/wwj_3.png">
+			</div>
+			<div class="wwj_4">
+				<img src="img/wwj_4.png">
+			</div>
+			<div class="wwj_5">
+				<img src="img/wwj_5.png">
+			</div>
+			<div class="wwj_6">
+				<img src="img/wwj_6.png">
+			</div>
+			<div class="wwj_txt1">
+				<p>奥迪大众宝马</p>
+			</div>
+			<div class="wwj_txt2">
+				<p>奥迪大众宝马</p>
+			</div>
+		</div>
+	</body>
+
+</html>

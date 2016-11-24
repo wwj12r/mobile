@@ -1,0 +1,20 @@
+attribute float size;
+attribute float rotation;
+attribute vec3 colors;
+attribute float alpha;
+
+varying vec3 vColor;
+varying float vRot;
+varying float vAlpha;
+
+void main() {
+
+  vColor = colors;
+  vRot = rotation;
+  vAlpha = alpha;
+
+  vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
+  gl_PointSize = size * ( 200.0 / length( mvPosition.xyz ) );
+  gl_Position = projectionMatrix * mvPosition;
+
+}
